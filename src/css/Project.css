@@ -1,0 +1,41 @@
+/* src/components/Project.css */
+
+.Tilt {
+  height: 100%;
+}
+
+.project-container {
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-container:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-details {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 215, 0, 0) 0%,
+    rgba(255, 215, 0, 1) 100%
+  );
+  color: #333;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out, opacity 0.5s ease-in-out;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+.project-container:hover .project-details {
+  opacity: 1;
+  transform: translateY(-100%);
+}

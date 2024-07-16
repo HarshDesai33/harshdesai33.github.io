@@ -1,0 +1,47 @@
+.footer {
+  padding: 20px 0;
+  /* background-image: url("path/to/your/background-image.jpg"); Add a nice background image if desired */
+  background-size: cover;
+  background-position: center;
+}
+
+.footer h5 {
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .btn {
+  margin-top: 20px;
+}
+
+.footer p {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

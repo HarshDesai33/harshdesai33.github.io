@@ -1,0 +1,205 @@
+.header {
+  position: relative;
+  height: 100vh;
+  /* background: url("https://trydo.rainbowit.net/assets/images/bg/bg-image-28.jpg")
+    no-repeat center center/cover; */
+  background: linear-gradient(
+      272deg,
+      rgba(0, 0, 0, 0.859),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.859)
+    ),
+    url("../image/IMG_20240711_165317.jpg") no-repeat center center/cover;
+  background-color: black;
+  color: white;
+  /* text-align: center; */
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.portfolio_main_header {
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header .container {
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.social_media_section {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 111;
+  right: 0;
+}
+
+.social_icon_boxes {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.social_icon_boxes a {
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 5px 0px;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 20px 0px 0px 20px;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.3s ease;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.social_icon_boxes:hover a {
+  width: 150px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    padding: 0 20px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header .lead p {
+    font-size: 1.2rem;
+  }
+}
+
+/* all animations */
+.square-animation1,
+.square-animation2,
+.rec-animation3,
+.rec-animation4,
+.circle-animation5 {
+  position: absolute;
+  /* background: linear-gradient(135deg, #007bff, #00bfff); */
+  background: linear-gradient(135deg, #84d3843c, #ffd90036);
+  z-index: 1;
+}
+
+/* square zoom-in zoom-out animation */
+.square-animation1 {
+  bottom: 200px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  animation: squareAnimation1 10s linear infinite alternate;
+  background: linear-gradient(135deg, #007bff2e, #00bfff2f);
+}
+
+/* square rotate animation */
+.square-animation2 {
+  top: 100px;
+  left: 200px;
+  width: 50px;
+  height: 50px;
+  animation: squareAnimation2 5s ease-in-out infinite alternate;
+  /* background: linear-gradient(135deg, #c8f9043a, #ff8c0041); */
+  background: linear-gradient(135deg, #007bff2e, #00bfff2f);
+}
+
+/* rectangle rotate animation */
+.rec-animation3 {
+  bottom: 500px;
+  left: 200px;
+  width: 10px;
+  height: 50px;
+  animation: recAnimation3 0.1s infinite alternate linear;
+}
+
+/* rectangle top-down animation */
+.rec-animation4 {
+  top: 300px;
+  left: 30%;
+  width: 2px;
+  height: 70px;
+  animation: recAnimation4 3.5s infinite alternate;
+}
+
+/* circle animation */
+.circle-animation5 {
+  top: 300px;
+  left: 48%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto;
+  animation: circleAnimation5 5s infinite linear;
+}
+
+@keyframes squareAnimation1 {
+  0% {
+    transform: rotate(0deg) scale(0, 0);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1, 1);
+  }
+}
+
+@keyframes squareAnimation2 {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(500px) rotate(360deg);
+  }
+}
+@keyframes recAnimation3 {
+  to {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}
+@keyframes recAnimation4 {
+  to {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  from {
+    transform: translateY(720px) rotate(360deg);
+  }
+}
+@keyframes circleAnimation5 {
+  0% {
+    transform: rotate(0deg) translateY(200px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(200px) rotate(-360deg);
+  }
+}

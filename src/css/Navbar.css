@@ -1,0 +1,58 @@
+.navbar {
+  transition: background-color 0.5s ease, top 0.5s ease;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+  top: 0;
+}
+
+.navbar-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  top: -10px;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffd700;
+}
+
+.navbar-nav .nav-item .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffd700;
+  animation: underlineSlideIn 0.5s ease;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+}
+
+@keyframes underlineSlideIn {
+  0% {
+    width: 0%;
+    left: 50%;
+  }
+
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px 10px;
+  }
+}

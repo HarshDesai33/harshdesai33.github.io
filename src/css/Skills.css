@@ -1,0 +1,50 @@
+.skills-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+}
+
+.section-title {
+  animation: fadeIn 1s ease-in-out forwards;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.skill-item {
+  margin-bottom: 30px;
+}
+
+.skill-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}

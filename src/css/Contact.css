@@ -1,0 +1,47 @@
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.315);
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.315);
+}
+
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(255, 255, 255, 0.315);
+}
+
+/* css for floating input */
+
+/* .form-floating > input:not(:focus):placeholder-shown + label {
+  background: #000000;
+} */
+
+/* .form-floating > input + label:after {
+  background: #000 !important;
+  color: #343a40;
+} */
+
+.inputText {
+  border: 1px solid rgba(255, 255, 255, 0.315);
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.contact-header {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.contact-info {
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@media (max-width: 990px) {
+  .contact_section {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,186 @@
+.education-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.405), rgba(0, 0, 0, 0.628)),
+    url("https://wallpapercave.com/wp/wp6412485.jpg") no-repeat center
+      center/cover fixed;
+  /* https://wallpapercave.com/wp/wp7453739.jpg */
+  /* https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg */
+}
+
+.section-title {
+  margin-bottom: 40px;
+  font-size: 70px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.education-card {
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.card-content {
+  z-index: 2;
+  position: relative;
+}
+
+.institution {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.degree {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 1rem;
+}
+
+.card-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  /* background: linear-gradient(135deg, #007bff, #00bfff); */
+  background: linear-gradient(135deg, #84d384, #ffd700);
+  z-index: 1;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  animation: cardDecoration 1s ease-in-out forwards;
+}
+
+.circle-animation1 {
+  position: absolute;
+  /* background: linear-gradient(135deg, #007bff, #00bfff); */
+  background: linear-gradient(135deg, #84d3843c, #ffd90036);
+  z-index: 1;
+  bottom: 300px;
+  left: 48%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto;
+  animation: circleAnimation1 10s infinite linear alternate;
+  overflow: hidden;
+}
+@keyframes circleAnimation1 {
+  0% {
+    transform: translateY(0) translateX(0px) scale(0);
+  }
+  50% {
+    transform: translateY(-100px) translateX(200px) scale(1);
+  }
+  100% {
+    transform: translateY(400px) translateX(400px) scale(0);
+  }
+}
+
+.circle-animation2 {
+  position: absolute;
+  /* background: linear-gradient(135deg, #007bff, #00bfff); */
+  background: linear-gradient(135deg, #84d3843c, #ffd90036);
+  z-index: 1;
+  top: 0px;
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: auto;
+  animation: circleAnimation2 10s infinite ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes circleAnimation2 {
+  0% {
+    transform: translateY(0) translateX(0px);
+  }
+
+  100% {
+    transform: translateY(430px) translateX(200px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardDecoration {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .institution {
+    font-size: 1.2rem;
+  }
+  .degree,
+  .year,
+  .description {
+    font-size: 1rem;
+  }
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* background-color: #007bff; */
+  /* border-radius: 50%; */
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .institution {
+    font-size: 1.2rem;
+  }
+  .degree,
+  .year,
+  .description {
+    font-size: 1rem;
+  }
+  .education-card {
+    padding: 15px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
