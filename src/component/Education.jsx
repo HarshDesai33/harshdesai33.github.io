@@ -88,7 +88,7 @@ const Education = () => {
                   key={index}
                 >
                   <Tilt>
-                    <div className="card text-white rounded-4">
+                    <div className="card text-white rounded-4 pb-4">
                       <div className="card-body d-flex flex-column gap-3">
                         <h5
                           className="card-title fw-bold pt-3"
